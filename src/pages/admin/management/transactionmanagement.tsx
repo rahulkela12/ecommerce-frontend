@@ -149,7 +149,7 @@ const ProductCard = ({
 }: OrderItem) => (
   <div className="transaction-product-card">
     <img src={photo} alt={name} />
-    <Link to={`${server}/api/v1/product/${productId}`}>{name}</Link>
+    <Link to={`/admin/product/${productId}`}>{name}</Link>
     <span>
       ₹{price} X {quantity} = ₹{price * quantity}
     </span>
