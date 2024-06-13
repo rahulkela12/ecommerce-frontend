@@ -1,11 +1,11 @@
+import toast from "react-hot-toast";
 import { useSelector } from "react-redux";
+import { Skeleton } from "../../../components/Loader";
 import AdminSidebar from "../../../components/admin/AdminSidebar";
 import { BarChart } from "../../../components/admin/Charts";
-import { RootState } from "../../../redux/store";
 import { useBarQuery } from "../../../redux/api/dashboardAPI";
+import { RootState } from "../../../redux/store";
 import { CustomError } from "../../../types/api-types";
-import toast from "react-hot-toast";
-import { Skeleton } from "../../../components/Loader";
 import { getLastMonths } from "../../../utils/features";
 
 

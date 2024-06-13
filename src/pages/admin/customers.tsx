@@ -1,14 +1,14 @@
 import { ReactElement, useEffect, useState } from "react";
+import toast from "react-hot-toast";
 import { FaTrash } from "react-icons/fa";
+import { useSelector } from "react-redux";
 import { Column } from "react-table";
+import { Skeleton } from "../../components/Loader";
 import AdminSidebar from "../../components/admin/AdminSidebar";
 import TableHOC from "../../components/admin/TableHOC";
-import { RootState } from "../../redux/store";
-import { useSelector } from "react-redux";
 import { useAllUsersQuery, useDeleteUserMutation } from "../../redux/api/userAPI";
+import { RootState } from "../../redux/store";
 import { CustomError } from "../../types/api-types";
-import toast from "react-hot-toast";
-import { Skeleton } from "../../components/Loader";
 import { responseToast } from "../../utils/features";
 
 interface DataType {

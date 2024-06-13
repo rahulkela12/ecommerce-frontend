@@ -1,5 +1,5 @@
-import { Link } from "react-router-dom";
 import { FaTrash } from "react-icons/fa";
+import { Link } from "react-router-dom";
 import { server } from "../redux/store";
 import { CartItem } from "../types/types";
 
