@@ -25,6 +25,8 @@ const Header = ({user}:PropsType) => {
     }
   }
   return (
+    <>
+    <h2 className='heading'>TrendyTreasures</h2>
     <nav className='header'>
         <Link onClick={()=>setIsOpen(false)} to={"/"}>HOME</Link>
         <Link onClick={()=>setIsOpen(false)} to={"/search"}><FaSearch/></Link>
@@ -47,6 +49,7 @@ const Header = ({user}:PropsType) => {
         </> :<Link to={"/login"}><FaSignInAlt/></Link>
     }
     </nav>
+    </>
   )
 }
 
